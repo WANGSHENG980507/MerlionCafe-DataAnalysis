@@ -39,4 +39,3 @@ data_hour.insert(0,'Type','hour')
 data_time = pd.concat([data_month,data_weekday,data_hour]).round(2)
 with pd.ExcelWriter(r"C:\Users\Alienware\Desktop\南洋\第一学期\decision making\team project\analysis.xlsx",mode='a') as writer:
     data_time.to_excel(writer,sheet_name='TPY-time')
-<img width="73" height="856" alt="image" src="https://github.com/user-attachments/assets/66692353-b825-4965-8ec3-1786d5d611dd" />
